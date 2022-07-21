@@ -37,18 +37,14 @@ keymap('v', '<leader>f', "<ESC><cmd>lua vim.lsp.buf.range_formatting()<CR>", opt
 -- no highlight
 keymap("n", "<leader>l", ":nohl<cr>", opts)
 -- save buffer
-keymap("n", "<leader>w", ":w<cr>", opts)
+keymap("n", "s", ":w<cr>", opts)
 -- exit cur window
-keymap("n", "<leader>q", ":q<cr>", opts)
+keymap("n", "q", ":q<cr>", opts)
 -- delete cur buffer
 keymap("n", "<leader>d", ":bp<bar>sp<bar>bn<bar>bd<CR>", opts)
 keymap("n", "<leader>D", ":bp<bar>sp<bar>bn<bar>bd<CR>", opts)
 -- exit whole program
 keymap("n", "ZZ", ":lua require('user.utils').SaveAndExit()<cr>", opts)
--- remap macro record key
-keymap("n", "Q", "q", opts)
--- cancel q
-keymap("n", "q", "<Nop>", opts)
 
 -- center cursor
 keymap("n", "n", "nzzzv", opts)
@@ -58,10 +54,10 @@ keymap("n", "J", "mzJ`z", opts)
 -- keymap("n", "k", "kzz", opts)
 
 -- Resize with arrows
-keymap("n", "<A-Up>", ":resize -2<CR>", opts)
-keymap("n", "<A-Down>", ":resize +2<CR>", opts)
-keymap("n", "<A-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<Up>", ":resize -2<CR>", opts)
+keymap("n", "<Down>", ":resize +2<CR>", opts)
+keymap("n", "<Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 -- keymap("n", "R", ":bnext<CR>", opts)
@@ -82,7 +78,7 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
 -- Press jl fast to enter
-keymap("i", "jl", "<ESC>", opts)
+keymap("i", "jj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
