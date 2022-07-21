@@ -286,8 +286,7 @@ return packer.startup(function(use)
   -- use "AckslD/nvim-neoclip.lua"
   use "vim-test/vim-test"
   use {
-    "rcarriga/vim-ultest",
-    run = ":UpdateRemotePlugins"
+    "nvim-neotest/neotest",
   }
   use { 'michaelb/sniprun', run = 'bash ./install.sh' }
   -- use "ravenxrz/DoxygenToolkit.vim"

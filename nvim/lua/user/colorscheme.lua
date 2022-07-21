@@ -1,11 +1,11 @@
 -- load themes config
 require ("user.themes.github-nvim-theme")
 -- require ("user.themes.onedark")
-require ("user.themes.catppuccin")
+--require ("user.themes.catppuccin")
 
 -- cursor color: #61AFEF
-local colorscheme = "catppuccin"
--- local colorscheme = "darkplus"
+--local colorscheme = "catppuccin"
+local colorscheme = "darkplus"
 -- local colorscheme = "github_light"
 -- require "user.conf.github-nvim-theme"
 

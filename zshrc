@@ -38,11 +38,6 @@ source ~/.shell/language.sh
 # auto commands
 source ~/.shell/autocommands.sh
 
-# fzy configs
-source ~/.shell/fzf-completion.zsh
-source ~/.shell/fzf-key-bindings.zsh
-
-
 # Allow local customizations in the ~/.shell_local_after file
 if [ -f ~/.shell_local_after ]; then
     source ~/.shell_local_after
@@ -57,4 +52,13 @@ fi
 if [ -f ~/.shell_private ]; then
     source ~/.shell_private
 fi
+
+export http_proxy="http://192.168.3.10:7890"
+export https_proxy="http://192.168.3.10:7890"
+
+alias vim='nvim'
+alias vi='nvim'
+alias v='nvim'
+
+source /opt/ros/noetic/setup.zsh
 
