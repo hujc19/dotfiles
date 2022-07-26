@@ -53,8 +53,8 @@ if [ -f ~/.shell_private ]; then
     source ~/.shell_private
 fi
 
-export http_proxy="http://192.168.3.10:7890"
-export https_proxy="http://192.168.3.10:7890"
+export http_proxy="http://10.30.62.12:7890"
+export https_proxy="http://10.20.62.12:7890"
 
 alias vim='nvim'
 alias vi='nvim'
